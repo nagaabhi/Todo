@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo-List</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <h1 class="heading">Todo List</h1>
+    <div class="container">
+      <button class="reset-todo" onclick="resetTodoList()">Reset</button>
+      <div class="inner-container">
+        <div class="elements-container">
+          <input
+            class="js-input-todo"
+            type="text"
+            placeholder="Enter todo"
+            onkeydown="
+            event.key === 'Enter' && addTodos();
+            "
+          />
+          <button onclick="addTodos()">add</button>
+        </div>
+        <div class="add-todo-items">
+          <!-- <span>Make dinner</span>
+          <button>Delete</button> -->
+        </div>
+      </div>
+    </div>
+   <!-- class="switch-modes">Dark Mode</button> <button onclick="enableDarMode()"  -->
+  </body>
+  <script src="./index.js"></script>
+</html>
